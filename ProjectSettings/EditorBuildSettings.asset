@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Escape 3D/Basement.unity
+    guid: db9bb56a429c09048b3ec288deec1e67
   m_configObjects: {}
