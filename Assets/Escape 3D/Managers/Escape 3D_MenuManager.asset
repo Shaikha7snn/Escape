@@ -232,7 +232,7 @@ MonoBehaviour:
     y: 761.67
     width: 68.985
     height: 48.33
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-8708346516963837694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1186,7 +1186,7 @@ MonoBehaviour:
   anchor: 4
   outlineSize: 2
   inventoryBoxType: 7
-  actionListOnClick: {fileID: 11400000, guid: 006991c5e5a2a4391bb18373a56ce249, type: 2}
+  actionListOnClick: {fileID: 11400000, guid: 04491fbdb15293940af69ef780c2813d, type: 2}
   maxSlots: 5
   limitToCategory: 0
   limitToDefinedInteractions: 1
@@ -1311,7 +1311,7 @@ MonoBehaviour:
     y: 274.05
     width: 292.95
     height: 261.9
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-5535669219921328137
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1366,7 +1366,7 @@ MonoBehaviour:
   textEffects: 0
   outlineSize: 2
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 57583fbafdf1e4964a77aba6223bc687, type: 2}
+  actionList: {fileID: 11400000, guid: 2f0b8cf60f2660746a466258e9d7b748, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -1483,7 +1483,7 @@ MonoBehaviour:
     y: 311.04
     width: 321.3
     height: 97.200005
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-4430789528143299762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1587,7 +1587,7 @@ MonoBehaviour:
     y: 448.13245
     width: 340.2
     height: 232.87503
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-4047575349898492398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1693,7 +1693,7 @@ MonoBehaviour:
     y: 0
     width: 945
     height: 102.08454
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-4008800645719895879
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1813,7 +1813,7 @@ MonoBehaviour:
     y: 124.74002
     width: 427.9504
     height: 560.51996
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-3989634919836187971
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2192,7 +2192,7 @@ MonoBehaviour:
   textEffects: 0
   outlineSize: 2
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 0bf9476cfba3b416c969199b54211877, type: 2}
+  actionList: {fileID: 11400000, guid: 119e9ff5cb0b46540be48af9c0d5748e, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -2495,7 +2495,7 @@ MonoBehaviour:
   showWhenPaused: 0
   canClickInCutscene: 0
   enabledOnStart: 0
-  actionListOnTurnOn: {fileID: 11400000, guid: f08f08e6520c746f289f229b9ffebade, type: 2}
+  actionListOnTurnOn: {fileID: 11400000, guid: ee08c65c7525f3242805c70a0bacddc1, type: 2}
   actionListOnTurnOff: {fileID: 0}
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
@@ -2578,7 +2578,7 @@ MonoBehaviour:
     y: 222.75
     width: 292.94998
     height: 364.5
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-2255341886868242928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3029,7 +3029,7 @@ MonoBehaviour:
     y: 138.48834
     width: 513.135
     height: 533.0233
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &-1294530129386784244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3402,14 +3402,14 @@ MonoBehaviour:
   globalDepth: 0
   pauseTexture: {fileID: 0}
   scaleTextEffects: 0
-  keyboardControlWhenPaused: 1
+  keyboardControlWhenPaused: 0
   keyboardControlWhenCutscene: 0
-  keyboardControlWhenDialogOptions: 1
+  keyboardControlWhenDialogOptions: 0
   autoSelectValidRaycasts: 0
   horizontalInputAxis: Horizontal
   verticalInputAxis: Vertical
   useAddressables: 0
-  hasUpgraded: 0
+  hasUpgraded: 1
   doWindowsPreviewFix: 1
   drawOutlines: 1
   drawInEditor: 1
@@ -3749,7 +3749,7 @@ MonoBehaviour:
     y: 244.34999
     width: 349.65
     height: 321.30002
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &405837191389795688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4460,7 +4460,7 @@ MonoBehaviour:
     y: 274.05
     width: 292.95
     height: 261.9
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &1487177193028742095
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4761,7 +4761,7 @@ MonoBehaviour:
   textEffects: 0
   outlineSize: 2
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 0390d7199340c422da894cb624fdfddb, type: 2}
+  actionList: {fileID: 11400000, guid: ebda2bdc557eabe43a4eb76fafaa8ad8, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -5025,7 +5025,7 @@ MonoBehaviour:
     y: 533.79
     width: 472.5
     height: 226.8
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &2010353171533849188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5060,7 +5060,7 @@ MonoBehaviour:
   showWhenPaused: 0
   canClickInCutscene: 0
   enabledOnStart: 0
-  actionListOnTurnOn: {fileID: 11400000, guid: d25b1951b64504ecca2be84c2a8e0668, type: 2}
+  actionListOnTurnOn: {fileID: 11400000, guid: ee3b2a60566a8dc4c80f8755e71146df, type: 2}
   actionListOnTurnOff: {fileID: 0}
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
@@ -5143,7 +5143,7 @@ MonoBehaviour:
     y: 86.843445
     width: 529.2
     height: 636.3131
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &2033787371620484680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5469,7 +5469,7 @@ MonoBehaviour:
   textEffects: 0
   outlineSize: 2
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 7e291607709b64c05a5146e66857ebd9, type: 2}
+  actionList: {fileID: 11400000, guid: dfef151ae060ceb439ff9e2f895ca0e8, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -5713,7 +5713,7 @@ MonoBehaviour:
   showWhenPaused: 0
   canClickInCutscene: 0
   enabledOnStart: 0
-  actionListOnTurnOn: {fileID: 11400000, guid: c6e29f6ea3d084d049c474742119836c, type: 2}
+  actionListOnTurnOn: {fileID: 11400000, guid: 077a0e05b860f4b42b8a14dc36a83b33, type: 2}
   actionListOnTurnOff: {fileID: 0}
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
@@ -5789,7 +5789,7 @@ MonoBehaviour:
     y: 289.57498
     width: 160.65001
     height: 230.85002
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &5299925153337650072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5909,7 +5909,7 @@ MonoBehaviour:
     y: 241.79381
     width: 525.9545
     height: 326.41238
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &6112380140251909837
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6104,7 +6104,7 @@ MonoBehaviour:
   textEffects: 0
   outlineSize: 2
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 673b36f59d83c4cc5b707d270f4ad87a, type: 2}
+  actionList: {fileID: 11400000, guid: 2f8713f3b187f7641b1f667403b7315f, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -6235,7 +6235,7 @@ MonoBehaviour:
   textEffects: 0
   outlineSize: 2
   buttonClickType: 3
-  actionList: {fileID: 11400000, guid: 591d780ae90874a03991d7fa69e706cb, type: 2}
+  actionList: {fileID: 11400000, guid: cd7f71f9834bd1b45ae90783678554e8, type: 2}
   parameterID: -1
   parameterValue: 0
   doFade: 0
@@ -6358,7 +6358,7 @@ MonoBehaviour:
     y: 378.1485
     width: 108.75749
     height: 53.703
-  showInFilter: 0
+  showInFilter: 1
 --- !u!114 &7810125797288038966
 MonoBehaviour:
   m_ObjectHideFlags: 1
