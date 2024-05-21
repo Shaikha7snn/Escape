@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escape 3D/Basement.unity
     guid: db9bb56a429c09048b3ec288deec1e67
+  - enabled: 0
+    path: Assets/Escape 3D/level2.unity
+    guid: a256a4f44b3284b47950bd5cf672fece
+  - enabled: 1
+    path: Assets/Escape 3D/2nd floor.unity
+    guid: f5edbb1fe2ff6fa448521cdba7292470
   m_configObjects: {}
