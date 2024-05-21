@@ -44714,7 +44714,7 @@ PrefabInstance:
     - target: {fileID: 7446125297645096015, guid: c7efdedd499223f438c6a40b50fe5cd2, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1021461329}
     - target: {fileID: 7446125298493608798, guid: c7efdedd499223f438c6a40b50fe5cd2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -47309,6 +47309,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3995307353703350107, guid: f5167dc0a0307974f8a7d2a95aff834c, type: 3}
   m_PrefabInstance: {fileID: 1014981465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1021461329 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4363264526272741511, guid: 49a0a259a4a1fa7478ea3f819c010062, type: 3}
+  m_PrefabInstance: {fileID: 970566031}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1021748631
 PrefabInstance:
@@ -79636,7 +79641,7 @@ PrefabInstance:
     - target: {fileID: 8679555922593521291, guid: d6e539ad86bb91548a339c20ce360211, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1021461329}
     - target: {fileID: 8679555923015078375, guid: d6e539ad86bb91548a339c20ce360211, type: 3}
       propertyPath: m_RootOrder
       value: 1
