@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escape 3D/2nd floor.unity
     guid: f5edbb1fe2ff6fa448521cdba7292470
+  - enabled: 1
+    path: Assets/Escape 3D/Level 4.unity
+    guid: 509e12c4f95fa3c4e830241e21e9e8dc
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 34cced316a0b97a4fa94fb02c4fbecc0
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 13e872729ce30cd40ab030ffefe217f2
   m_configObjects: {}
