@@ -32,12 +32,12 @@ public class LevelManager : MonoBehaviour
     {
         if (!levelCompleted)
         {
-            ReloadScene();
+            LoadGameOverScene();
         }
     }
 
-    private void ReloadScene()
+    private void LoadGameOverScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("LoseScreen"); // Replace with your actual game over scene name
     }
 }
