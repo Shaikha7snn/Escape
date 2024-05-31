@@ -20602,7 +20602,7 @@ MonoBehaviour:
   isPlayer: 0
   playerID: -1
   speaker: {fileID: 1171040175}
-  messageText: I will let you go, only if you bring me $500 within the time left.
+  messageText: I will let you go, only if you bring me $5000 within the time left.
     Tik-Tok!
   lineID: -1
   multiLineIDs: 
