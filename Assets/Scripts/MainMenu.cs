@@ -5,6 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public string gameSceneName = "Basement"; // Name of your game scene
     public string creditsSceneName = "Credits"; // Name of your credits scene
+    public string instructionsSceneName = "Instructions"; // Name of your instructions scene
 
     // Method to load the game scene
     public void StartNewGame()
@@ -16,6 +17,12 @@ public class MainMenu : MonoBehaviour
     public void ShowCredits()
     {
         SceneManager.LoadScene(creditsSceneName);
+    }
+
+    // Method to show instructions
+    public void ShowInstructions()
+    {
+        SceneManager.LoadScene(instructionsSceneName);
     }
 
     // Method to exit the game

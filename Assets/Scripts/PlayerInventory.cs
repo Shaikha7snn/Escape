@@ -11,7 +11,7 @@ public class PlayerInventory : MonoBehaviour
 
     public void MoneyCollected()
     {
-        NumberOfMoney = NumberOfMoney + 100;
+        NumberOfMoney = NumberOfMoney + 1000;
         OnMoneyCollected.Invoke(this);
     }
 }

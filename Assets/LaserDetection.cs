@@ -10,9 +10,9 @@ public class LaserDetection : MonoBehaviour
     {
         if (other.CompareTag("Player"))  // Make sure your player GameObject has the tag "Player"
         {
-            Debug.Log("Player has touched a laser. Reloading scene.");
-            Debug.Log("Player has touched a laser. Reloading scene.");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // Reload the current scene
+            Debug.Log("Player has touched a laser. Showing game over screen.");
+            GameOverScreen.SetPreviousScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("LoseScreen");  // Replace with your actual game over scene name
         }
     }
 }
