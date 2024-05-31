@@ -5,11 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
-    // Method to restart the current level
+    private static string previousScene;
+
+    // Method to be called before loading the game over screen
+    public static void SetPreviousScene(string sceneName)
+    {
+        previousScene = sceneName;
+    }
+
+    // Method to restart the previous level
     public void TryAgain()
     {
-        // Reload the current active scene
-        SceneManager.LoadScene("Level 4");
+        if (!string.IsNullOrEmpty(previousScene))
+        {
+            SceneManager.LoadScene(previousScene);
+        }
+        else
+        {
+            Debug.LogWarning("Previous scene not set.");
+        }
     }
 
     // Method to go back to the main menu

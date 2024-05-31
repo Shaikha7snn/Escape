@@ -38,6 +38,7 @@ public class LevelManager : MonoBehaviour
 
     private void LoadGameOverScene()
     {
+        GameOverScreen.SetPreviousScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("LoseScreen"); // Replace with your actual game over scene name
     }
 }
