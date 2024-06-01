@@ -13823,6 +13823,7 @@ MonoBehaviour:
   isOpen: 0
   player: {fileID: 478947393}
   interactionDistance: 15
+  endSceneName: 1End
 --- !u!95 &418755224 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7446125297645096016, guid: c7efdedd499223f438c6a40b50fe5cd2, type: 3}
