@@ -33076,6 +33076,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 589921482964170841, guid: 66d2afaf308f4dc47b320244bd190cdf, type: 3}
   m_PrefabInstance: {fileID: 1238108766}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1238691453 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2476034423173199641, guid: 0c21a45a5bd17f34ba497f971ac96bb5, type: 3}
+  m_PrefabInstance: {fileID: 129679138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1239669742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45637,6 +45642,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3995307353703350107, guid: f5167dc0a0307974f8a7d2a95aff834c, type: 3}
   m_PrefabInstance: {fileID: 1785844239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1789235166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2476034423101654052, guid: 0c21a45a5bd17f34ba497f971ac96bb5, type: 3}
+  m_PrefabInstance: {fileID: 2017489148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1789235173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789235166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84637be91ac6044eac3953a330c3245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openandclose: {fileID: 1238691453}
+  isOpen: 0
+  player: {fileID: 747696837}
+  interactionDistance: 15
+  endSceneName: 3End
 --- !u!1001 &1790513886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51321,10 +51348,17 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 747696837}
+    - target: {fileID: 2476034423173199638, guid: 0c21a45a5bd17f34ba497f971ac96bb5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2476034423101654052, guid: 0c21a45a5bd17f34ba497f971ac96bb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1789235173}
   m_SourcePrefab: {fileID: 100100000, guid: 0c21a45a5bd17f34ba497f971ac96bb5, type: 3}
 --- !u!4 &2017489149 stripped
 Transform:

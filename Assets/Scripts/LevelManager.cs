@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
         {
             levelCompleted = true;
             Debug.Log("YOU WIN!");
-            // Add any additional win logic here
+            LoadWinScene();
         }
     }
 
@@ -40,5 +40,10 @@ public class LevelManager : MonoBehaviour
     {
         GameOverScreen.SetPreviousScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("LoseScreen"); // Replace with your actual game over scene name
+    }
+
+    private void LoadWinScene()
+    {
+        SceneManager.LoadScene("4End"); // Load the win scene directly
     }
 }
