@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class KeyDoor : MonoBehaviour
 {
+
     public Animator openandclose;
     public bool isOpen;  // To track the state of the door
     public Transform player;
     public float interactionDistance = 15.0f;  // Maximum distance at which the player can interact with the door
+    public string endSceneName;  // Name of the end scene to load
 
     void Start()
     {
@@ -44,7 +46,10 @@ public class KeyDoor : MonoBehaviour
         print("You are opening the door.");
         openandclose.Play("Opening");
         isOpen = true;
-        yield return new WaitForSeconds(0.5f);  // Wait for half a second
+        yield return new WaitForSeconds(0.0f);  // Wait for half a second
+
+        // Load the end scene
+        SceneManager.LoadScene(endSceneName);  // Use the endSceneName variable
     }
 
     IEnumerator Closing()
@@ -52,7 +57,6 @@ public class KeyDoor : MonoBehaviour
         print("You are closing the door.");
         openandclose.Play("Closing");
         isOpen = false;
-        yield return new WaitForSeconds(0.5f);  // Wait for half a second
+        yield return new WaitForSeconds(0.0f);  // Wait for half a second
     }
-
 }
