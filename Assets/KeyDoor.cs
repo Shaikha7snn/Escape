@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 public class KeyDoor : MonoBehaviour
 {
-
     public Animator openandclose;
-    public bool isOpen;  // To track the state of the door
+    public bool isOpen;
     public Transform player;
-    public float interactionDistance = 15.0f;  // Maximum distance at which the player can interact with the door
-    public string endSceneName;  // Name of the end scene to load
+    public float interactionDistance = 15.0f;
+    public string endSceneName;
+    public TextMeshProUGUI keyMessage;
 
     void Start()
     {
         isOpen = false;
+        keyMessage.gameObject.SetActive(false);
     }
 
     void Update()
@@ -23,19 +26,28 @@ public class KeyDoor : MonoBehaviour
 
     void HandleDoorInteraction()
     {
-        // Check if the player is within the interaction distance
         float dist = Vector3.Distance(player.position, transform.position);
-        if (dist <= interactionDistance)
+        if (dist <= interactionDistance && Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))  // Check for mouse input to interact with the door
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
             {
-                if (!isOpen && KeyPickup.HasKey)  // If door is not open and player has the key
+                if (hit.transform == transform &&  hit.transform.gameObject.layer == LayerMask.NameToLayer("ExitDoorLayer"))
                 {
-                    StartCoroutine(Opening());
-                }
-                else if (isOpen)  // If door is already open and player clicks
-                {
-                    StartCoroutine(Closing());
+                    if (!isOpen && KeyPickup.HasKey)
+                    {
+                        StartCoroutine(Opening());
+                    }
+                    else if (isOpen)
+                    {
+                        StartCoroutine(Closing());
+                    }
+                    else if (!KeyPickup.HasKey)
+                    {
+                        StartCoroutine(DisplayMessage("You have to find the key to open the door."));
+                    }
                 }
             }
         }
@@ -43,20 +55,24 @@ public class KeyDoor : MonoBehaviour
 
     IEnumerator Opening()
     {
-        print("You are opening the door.");
         openandclose.Play("Opening");
         isOpen = true;
-        yield return new WaitForSeconds(0.0f);  // Wait for half a second
-
-        // Load the end scene
-        SceneManager.LoadScene(endSceneName);  // Use the endSceneName variable
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(endSceneName);
     }
 
     IEnumerator Closing()
     {
-        print("You are closing the door.");
         openandclose.Play("Closing");
         isOpen = false;
-        yield return new WaitForSeconds(0.0f);  // Wait for half a second
+        yield return new WaitForSeconds(0.5f);
+    }
+
+    IEnumerator DisplayMessage(string message)
+    {
+        keyMessage.text = message;
+        keyMessage.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        keyMessage.gameObject.SetActive(false);
     }
 }
