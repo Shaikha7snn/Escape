@@ -7,8 +7,9 @@ public class openclosesejail: MonoBehaviour {
 	public Animator openandclosejail;
 	public bool open;
 	public Transform Player;
+    public AudioSource audioSource;
 
-	void Start (){
+    void Start (){
 		open = false;
 	}
 
@@ -20,12 +21,14 @@ public class openclosesejail: MonoBehaviour {
 					if (open == false) {
 						if (Input.GetMouseButtonDown (0)) {
 							StartCoroutine (opening ());
-						}
+							PlayAudio();
+                        }
 					} else {
 						if (open == true) {
 							if (Input.GetMouseButtonDown (0)) {
 								StartCoroutine (closing ());
-							}
+                                PlayAudio();
+                            }
 						}
 
 					}
@@ -36,8 +39,19 @@ public class openclosesejail: MonoBehaviour {
 		}
 
 	}
+    public void PlayAudio()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogError("AudioSource is not assigned!");
+        }
+    }
 
-	IEnumerator opening(){
+    IEnumerator opening(){
 		print ("you are opening the door");
         openandclosejail.Play ("Openingjail");
 		open = true;

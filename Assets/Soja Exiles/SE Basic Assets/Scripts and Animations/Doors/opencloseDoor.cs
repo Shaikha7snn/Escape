@@ -7,8 +7,9 @@ public class opencloseDoor: MonoBehaviour {
 	public Animator openandclose;
 	public bool open;
 	public Transform Player;
+    public AudioSource audioSource;
 
-	void Start (){
+    void Start (){
 		open = false;
 	}
 
@@ -20,12 +21,16 @@ public class opencloseDoor: MonoBehaviour {
 					if (open == false) {
 						if (Input.GetMouseButtonDown (0)) {
 							StartCoroutine (opening ());
-						}
+                            PlayAudio();
+
+                        }
 					} else {
 						if (open == true) {
 							if (Input.GetMouseButtonDown (0)) {
 								StartCoroutine (closing ());
-							}
+								PlayAudio();
+
+                            }
 						}
 
 					}
@@ -36,8 +41,19 @@ public class opencloseDoor: MonoBehaviour {
 		}
 
 	}
+    public void PlayAudio()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogError("AudioSource is not found!");
+        }
+    }
 
-	IEnumerator opening(){
+    IEnumerator opening(){
 		print ("you are opening the door");
 		openandclose.Play ("Opening");
 		open = true;

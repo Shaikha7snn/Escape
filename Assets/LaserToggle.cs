@@ -11,6 +11,7 @@ public class LaserToggle : MonoBehaviour
     public float moveSpeed = 5f; // Speed of button movement
     public Vector3 onPosition; // Customizable position for ON state
     public Vector3 offPosition; // Customizable position for OFF state
+    public AudioSource audioSource;
     void Start()
     {
         // Initialize the laser collider
@@ -22,6 +23,7 @@ public class LaserToggle : MonoBehaviour
     {
         // Toggle the laser and update its state
         bool newState = !laser.activeSelf;
+        PlayAudio();
         laser.SetActive(newState);
         UpdateLaserState(newState);
 
@@ -44,6 +46,17 @@ public class LaserToggle : MonoBehaviour
         {
             buttonTransform.localPosition = Vector3.Lerp(buttonTransform.localPosition, targetPosition, moveSpeed * Time.deltaTime);
             yield return null;
+        }
+    }
+    public void PlayAudio()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogError("AudioSource is not assigned!");
         }
     }
 }
