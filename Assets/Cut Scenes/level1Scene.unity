@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -206,6 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883511527}
   - component: {fileID: 883511526}
+  - component: {fileID: 883511528}
   m_Layer: 0
   m_Name: VideoPlayer
   m_TagString: Untagged
@@ -264,6 +265,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883511528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883511525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed79c3488ccdd90498fcb2b6749812b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Basement
 --- !u!1 &1367590744
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,10 +645,10 @@ RectTransform:
   m_Father: {fileID: 1401704422}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 678, y: -426}
-  m_SizeDelta: {x: 309.4889, y: 70.4626}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -282, y: 99}
+  m_SizeDelta: {x: 309.4889, y: 70.462585}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1652822985
 MonoBehaviour:
