@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class CreditsMenu : MonoBehaviour
 {
-   // public string mainMenuSceneName = "MainMenu"; // Name of your main menu scene
+    public string mainMenuSceneName = "MainMenu"; // Name of your main menu scene
 
     // Method to return to main menu
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 }
